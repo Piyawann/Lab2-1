@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body> 
+    <form action="form-echo.php" method="get">
+        ชื่อเต็ม/ย่อของสาขา :
+        <input
+            type="text"
+            name="name"
+            placeholder="name"
+            pattern="[A-Z a-z]+">
+
+    <br>
+    <br>จำนวนเงินที่จะโอน :
+        <input
+            type="number"
+            name="money"
+            placeholder="money"
+            pattern="[0-9]+">
+            
+    <br>
+    <br>อาหารที่ชื่นชอบ 5 ชนิดที่ชื่นชอบจากมากไปน้อย : <br>
+        <textarea name="food" rows="5" cols="50" pattern="[ก-๏\s]+"></textarea>
+
+    <br>
+    <br>ค่าไฟฟ้า 3 เดือนที่ผ่านมา :
+        <input
+            type="number"
+            name="electricity"
+            placeholder="electricity"
+            pattern="[0-9]">
+
+        <br>
+        <br>รหัสบัตรประชาชน :
+        <input
+            type="text"
+            name="id number"
+            placeholder="id number"
+            pattern="[0-9]{13}">
+        
+        <br>
+        <br>ความพึงพอใจของหนังสือเล่มนี้ :
+        <input
+                type="range"
+                name="satisfaction">
+
+        <br>
+        <br>อาการป่วย : <br>
+            <textarea name="sick" rows="5" cols="50" pattern="[ก-๏\s]+"></textarea>
+
+        <br>
+        <br>ในช่วง 3 เดือนที่ผ่านมา เคยได้รับวัคซีนหรือไม่ : <br>
+        <input type="radio" id="vaccine1" name="vaccine" value="เคย">
+        <label for="vaccine1">เคย</label>   <br>
+        <input type="radio" id="vaccine2" name="vaccine" value="เคย">
+        <label for="vaccine2">ไม่เคย</label> <br>  
+
+        <br>
+        <br>รหัสผ่าน :
+        <input type="password" id="password" name="password">
+
+        <br>
+        <br>เวลาเริ่มเข้าเรียนและสิ้นสุดการเรียน :
+        <label for="start study">เวลาเข้าเรียน :</label>
+        <input type="time" id="start study" name="start study">
+        <label for="finish">เวลาสิ้นสุดการเรียน :</label>
+        <input type="time" id="finish study" name="finish study">
+        
+        <br>
+        <br>วันเวลาที่ต้องไปพบแพทย์ :
+        <label for="date">ว/ด/ป:</label>
+        <input type="date" id="date" name="date">
+        <label for="time">เลือกเวลา:</label>
+        <input type="time" id="time" name="time">
+
+
+        <p><input type="submit" value="Submit">
+    </form>
+</body>
+</html>
